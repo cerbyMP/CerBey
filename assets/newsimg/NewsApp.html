@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flutter News</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="../img/logo.png" rel="icon">
+  <link href="../img/logo.png" rel="apple-touch-icon">
+
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #e0f0ff;
+      padding: 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1, header p {
+      margin: 0;
+    }
+
+    header h1 {
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      color: #555;
+      font-size: 18px;
+    }
+
+    section {
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 8px;
+    }
+
+    #skills ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #skills li {
+      background-color: #e0f7ff;
+      padding: 8px;
+      margin: 5px;
+      display: inline-block;
+      border-radius: 4px;
+    }
+
+    footer {
+      background-color: #ddefff;
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+    }
+
+    footer a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .spaceel {
+      padding: 25px;
+    }
+
+    .allelem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      position: relative;
+    }
+
+    ul.prev {
+      position: absolute;
+      left: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li.prev {
+      list-style: none;
+      width: 80px;
+      height: 80px;
+      background: #262626;
+      margin: 0 10px;
+      border-radius: 50%;
+      transition: .5s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    ul li.prev:hover {
+      background: #0070ff;
+    }
+
+    ul li.prev span {
+      display: block;
+      width: 25px;
+      height: 25px;
+      border: 4px solid #fff;
+      transition: .5s;
+      transform: rotate(-45deg);
+      border-right: none;
+      border-bottom: none;
+    }
+
+    ul li.prev:hover span {
+      transform: translateX(-10px) rotate(-45deg);
+    }
+
+    ul li.prev span::before {
+      content: '';
+      position: absolute;
+      width: 38px;
+      height: 4px;
+      background: #fff;
+      transform-origin: left;
+      transform: rotate(45deg) translate(-12px, 8px) scaleX(0);
+      transition: .5s;
+    }
+
+    ul li.prev:hover span::before {
+      transform: rotate(45deg) translate(-12px, 8px) scaleX(1); /*2 nice looking*/
+    }
+    h3{
+        color: #2c1313;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../../index.html" class="prev-link">
+      <ul><li class="prev"><span></span></li></ul>
+    </a>
+    <div class="allelem">
+      <div>
+        <h1>Hicham Stitou</h1>
+        <p>Senior Mobile Developer</p>
+         <h3><a href="">Github Code Source</a></h3>
+      </div>
+    </div>
+    
+  </header>
+  <section id="about">
+    <h2>News Apps</h2>
+    <p>Get the latest news and updates at your fingertips with FlutterNews, the ultimate news app designed to keep you informed, engaged, and up-to-date with what’s happening around the world.</p>
+  </section>
+  <section id="skills">
+    <h2>Technology Use it</h2>
+      <ul>
+        <li>Flutter</li>
+        <li>Dart</li>
+        <li>Complex UIs</li>
+        <li>BloC</li>
+      </ul>
+  </section>
+  <section id="experience">
+    <h2>Project Images</h2>
+    <img src="Onboarding.png" width="337" height="713" alt="Global" class="spaceel">
+    <img src="Home.png" width="337" height="713" alt="Global" class="spaceel">
+    <img src="More News.png" width="337" height="713" alt="Global" class="spaceel">
+    <img src="Category.png" width="337" height="713" alt="Global" class="spaceel">
+    <img src="Breaking News.png" width="337" height="713" alt="Global" class="spaceel">
+    <img src="Trending News.png" width="337" height="713" alt="Global" class="spaceel">
+  </section>
+  <section id="experience">
+    <h2>Wire Flow</h2>
+    <img src="Mobile App User Flow.png" width="99%" height="100%" alt="Global" class="spaceel">
+  </section>
+  <section id="experience">
+    <h2>UI UX Case Study</h2>
+    <img src="UI UX.png" width="99%" height="100%" alt="Global" class="spaceel">
+  </section>
+</body>
+</html>
