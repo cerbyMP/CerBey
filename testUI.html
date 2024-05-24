@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2D Concert Agency</title>
+    <link rel="stylesheet" href="style.sass">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="path/to/logo.png" alt="H2D Logo">
+            </div>
+            <div class="lang-menu">
+                <button class="lang-button">EN</button>
+                <button class="menu-button">Menu</button>
+            </div>
+        </header>
+        <main>
+            <div class="hero">
+                <div class="overlay"></div>
+                <img src="path/to/hero-image.jpg" alt="Singer">
+                <div class="hero-content">
+                    <h1>We know how 2 do</h1>
+                    <h2>We are H2D</h2>
+                    <p>Concert agency — Kyiv, Ukraine<br>2018</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script >
+        document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.querySelector('.menu-button');
+    const langButton = document.querySelector('.lang-button');
+
+    menuButton.addEventListener('click', () => {
+        // Code to open menu
+        alert('Menu button clicked');
+    });
+
+    langButton.addEventListener('click', () => {
+        // Code to change language
+        alert('Language button clicked');
+    });
+});
+    </script>
+</body>
+</html>
