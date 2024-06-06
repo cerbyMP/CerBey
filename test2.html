@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+	<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    background-color: #111;
+    border-bottom: 1px solid #333;
+}
+
+.left-section .name-link {
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.right-section a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.right-section a:hover {
+    color: #1e90ff;
+}
+
+.right-section .active {
+    color: #1e90ff;
+}
+
+
+	</style>
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <a href="#" class="name-link">Yazan Tarifi</a>
+        </div>
+        <nav class="right-section">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Projects</a>
+            <a href="#" class="nav-link active">Skills</a>
+            <a href="#" class="nav-link">Archive</a>
+            <a href="#" class="nav-link">Articles</a>
+        </nav>
+    </header>
+
+    <script>
+		document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('.nav-link');
+
+    links.forEach(link => {
+        link.addEventListener('click', function() {
+            links.forEach(link => link.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+});
+
+	</script>
+</body>
+</html>

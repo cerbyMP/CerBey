@@ -50,7 +50,7 @@
             <img src="assets/img/logo.png" alt="Global">
             <p>CerBey</p>
           </a>
-          <button class="header--cta cta">All Projects</button>
+          <button class="header--cta cta" id="click" >All Projects</button>
           <div class="header--nav-toggle">
             <span></span>
           </div>
@@ -192,7 +192,7 @@
                 <a href="aboutLearning/learning.html">
                   <h3>Learning</h3>
                 </a>
-                <a href="aboutLaunching/launching.html">
+                <a href="aboutLunching/launching.html">
                   <h3>Launching</h3>
                 </a>
               </div>
@@ -354,5 +354,13 @@ document.querySelectorAll('.page-link').forEach(link => {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
 <script src="assets/js/functions-min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('click');
+    button.addEventListener('click', function() {
+        window.location.href = 'testUI.html';
+    });
+});
+</script>
 </body>
 </html>
