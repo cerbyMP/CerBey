@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+	<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    background-color: #111;
+    border-bottom: 1px solid #333;
+}
+
+.left-section .name-link {
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.right-section a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.right-section a:hover {
+    color: #1e90ff;
+}
+
+.right-section .active {
+    color: #1e90ff;
+}
+
+.hero-section {
+    padding: 50px 20px;
+}
+
+.hero-section h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1em;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.card-icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9em;
+}
+
+.card p:last-of-type {
+    color: #999;
+    font-size: 0.8em;
+}
+
+
+	</style>
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <a href="#" class="name-link">Hicham Stitou</a>
+        </div>
+        <nav class="right-section">
+            <a href="#" class="nav-link">Home</a>
+            <a href="Project.html" class="nav-link">Projects</a>
+            <a href="#" class="nav-link active">Skills</a>
+            <a href="#" class="nav-link">Archive</a>
+            <a href="#" class="nav-link">Articles</a>
+        </nav>
+    </header>
+    
+    <section class="hero-section">
+        <h1>Skills</h1>
+        <p>Languages, Frameworks in Working on</p>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon">
+					<img alt="Kotlin Language" src="https://raw.githubusercontent.com/Yazan98/portfolio/master/src/components/images/kotlin.webp" loading="lazy" width="50px" height="50px">                
+				</div>
+                <h2>Kotlin Language</h2>
+                <p>Build Kotlin Projects With Android Studio To Build Android Apps, Libraries or Kotlin Multi Platform and Gradle Plugins With Kotlin Also This is My Favourite Language Because as a Android Developer This is The Main Language im Working On</p>
+                <p>Android · Ktor Framework · Spring Boot · Gradle Plugins</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img alt="Javascript Language" src="https://raw.githubusercontent.com/Yazan98/portfolio/master/src/components/images/js.webp" loading="lazy" width="50px" height="50px">
+                </div>
+                <h2>Javascript Language</h2>
+                <p>JavaScript Used To Create Websites Built on React.js, Next.js Also Most Of Javascript Files Written With Jsx (ECMA +6) And The Backend Side With Express.js To Build Restful Api</p>
+                <p>React.js · Next.js · Express.js</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+					<img alt="Java Language" src="https://raw.githubusercontent.com/Yazan98/portfolio/master/src/components/images/java.webp" loading="lazy" width="50px" height="50px">                </div>
+                <h2>Java Language</h2>
+                <p>Java Language is My First Language i Learnt To Build Api Via Spring Boot and Learn Object Oriented Programming and Design Patterns While Building Applications also To Build Android Apps With Java Language</p>
+                <p>Android · Spring Boot · Jar Files · War Files · Tomcat</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+					<img alt="Ruby Language" src="https://raw.githubusercontent.com/Yazan98/portfolio/master/src/components/images/ruby.webp" loading="lazy" width="50px" height="50px">                </div>
+                <h2>Ruby Language</h2>
+                <p>Ruby Language is The Main Language i Use When i Need to Build Command Line Interface To Do Some Tasks That Need Third Party Api Communications And Multi Threading Task also Build Fastlane Plugins Mainly For Android</p>
+                <p>CLI's · Fastlane Plugins · Build Gems</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img alt="PHP Language" src="https://raw.githubusercontent.com/Yazan98/portfolio/master/src/components/images/pgp.webp" loading="lazy" width="50px" height="50px">
+                </div>
+                <h2>PHP Language</h2>
+                <p>Beginner Level In PHP and Laravel Mainly Im Currently Learning PHP To Build Restful Api's on Laravel With Mysql, Swagger, Auth, Return Html, Css Views From Api With Different Response Types, also Yii2 Framework With Mysql Connection, Json Response</p>
+                <p>Laravel . Yii2 . Mysql . Auth</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img alt="Android Development" src="https://raw.githubusercontent.com/Yazan98/portfolio/master/src/components/images/android.webp" loading="lazy" width="50px" height="50px">
+                </div>
+                <h2>Android Development</h2>
+                <p>Create Android Applications With Kotlin and Gradle DSL With Latest Android Technologies Like Hilt, Jetpack Compose, Esspresso, Single Activity Applications, Multi Modular Apps, Deal With Offline Caching Experience and Familiar With MVVM, MVI, MVP, MVC, VIPER, Firebase, RxJava</p>
+                <p>Optimized Apps . Android Apps</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img alt="Gradle" src="https://raw.githubusercontent.com/Yazan98/portfolio/master/src/components/images/gradle_dark.webp" loading="lazy" width="50px" height="50px">
+                </div>
+                <h2>Gradle</h2>
+                <p>Im Using Grovvy, Kotlin To Build Gradle Plugins To Configure Android projects or Spring Boot Projects Also Deploy Plugins On Gradle Portal Mainly The Plugins For Configuring Dynamic Tasks Or Libraries</p>
+                <p>Gradle Portal · Groovy · Dependencies Plugins</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+		document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('.nav-link');
+
+    links.forEach(link => {
+        link.addEventListener('click', function() {
+            links.forEach(link => link.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+});
+
+	</script>
+</body>
+</html>
