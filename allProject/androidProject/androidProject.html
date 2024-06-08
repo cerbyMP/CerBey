@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andriod</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 20px;
+            background-color: #111;
+            border-bottom: 1px solid #333;
+        }
+
+        .left-section .name-link {
+            color: #1e90ff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .right-section a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        .right-section a:hover {
+            color: #1e90ff;
+        }
+
+        .right-section .active {
+            color: #1e90ff;
+        }
+
+        .hero-section {
+            padding: 50px 20px;
+        }
+
+        .hero-section h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .hero-section p {
+            font-size: 1em;
+            margin-bottom: 40px;
+        }
+
+        .projects-section {
+            padding: 50px 20px;
+        }
+
+        .projects-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 30px;
+        }
+
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .project-details {
+            flex: 1;
+            margin-right: 20px;
+            text-align: left;
+        }
+
+        .project-details h3 {
+            color: #1e90ff;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .project-details p {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .project-details .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .project-details .tags span {
+            background-color: #333;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .project-details .project-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1e90ff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 10px;
+        }
+
+        .project-image {
+            flex: 1;
+        }
+
+        .project-image img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .project-container {
+                flex-direction: column;
+            }
+
+            .project-details {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <a href="#" class="name-link">Hicham Stitou</a>
+        </div>
+        <nav class="right-section">
+            <a href="#" class="nav-link">Home</a>
+            <a href="Project.html" class="nav-link">Projects</a>
+            <a href="#" class="nav-link active">Skills</a>
+            <a href="#" class="nav-link">Archive</a>
+            <a href="#" class="nav-link">Articles</a>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Discover my projects and skills</p>
+    </div>
+
+    <div class="projects-section">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-details">
+                <h3>Gitly</h3>
+                <p>This Project Built to Learn SwiftUI on iOS, MacOS Apps and the usage in this project for Apollo Client and GraphQL available only in iOS Apps. This project has a Download Schema, Generate and build Dynamic GraphQL Queries.</p>
+                <div class="tags">
+                    <span>iOS App</span>
+                    <span>Swift 5</span>
+                    <span>SwiftUI</span>
+                    <span>User Defaults</span>
+                    <span>GraphQL</span>
+                    <span>Apollo Client</span>
+                    <span>Dynamic Queries</span>
+                    <span>Pagination</span>
+                </div>
+                <a href="https://github.com/username/gitly" class="project-link">Project Link</a>
+            </div>
+            <div class="project-image">
+                <img src="cover.jpg" alt="Gitly">
+                
+            </div>
+            
+            
+        </div>
+
+    </div>
+    <div class="projects-section">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-details">
+                <h3>Gitly</h3>
+                <p>This Project Built to Learn SwiftUI on iOS, MacOS Apps and the usage in this project for Apollo Client and GraphQL available only in iOS Apps. This project has a Download Schema, Generate and build Dynamic GraphQL Queries.</p>
+                <div class="tags">
+                    <span>iOS App</span>
+                    <span>Swift 5</span>
+                    <span>SwiftUI</span>
+                    <span>User Defaults</span>
+                    <span>GraphQL</span>
+                    <span>Apollo Client</span>
+                    <span>Dynamic Queries</span>
+                    <span>Pagination</span>
+                </div>
+                <a href="https://github.com/username/gitly" class="project-link">Project Link</a>
+            </div>
+            <div class="project-image">
+                <img src="cover.jpg" alt="Gitly">
+                
+            </div>
+            
+            
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('.nav-link');
+
+            links.forEach(link => {
+                link.addEventListener('click', function() {
+                    links.forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

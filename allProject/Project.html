@@ -170,17 +170,13 @@
         </div>
         <nav class="right-section">
             <a href="#" class="nav-link">Home</a>
-            <a href="Project.html" class="nav-link">Projects</a>
-            <a href="#" class="nav-link active">Skills</a>
+            <a href="#" class="nav-link active " >Projects</a>
+            <a href="#" class="nav-link">Skills</a>
             <a href="#" class="nav-link">Archive</a>
             <a href="#" class="nav-link">Articles</a>
         </nav>
     </header>
 
-    <div class="hero-section">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Discover my projects and skills</p>
-    </div>
 
     <div class="projects-section">
         <h2>Projects</h2>
@@ -188,28 +184,29 @@
             <a href="#" class="tab-link active" data-filter="all">All Projects</a>
             <a href="#" class="tab-link" data-filter="android">Android Apps</a>
             <a href="#" class="tab-link" data-filter="ios">iOS Apps</a>
+            <a href="#" class="tab-link" data-filter="CrossPlatorm">Cross Platorm App</a>
             <a href="#" class="tab-link" data-filter="macos">MacOS Apps</a>
             <a href="#" class="tab-link" data-filter="websites">Websites</a>
             <a href="#" class="tab-link" data-filter="webapps">Web Apps</a>
         </div>
         <div class="projects-container">
-            <div class="project-card"  data-category="websites">
-                <a href="https://github.com/username/portfolio_v1">
+            <div class="project-card"  data-category="CrossPlatorm">
+                <a href="androidProject/androidProject.html">
                     <div class="project-image">
-                        <img src="../assets/img/contact-visual.png" alt="Portfolio V1">
+                        <img src="androidProject/cover.jpg" alt="Android">
                         <div class="overlay">
                             <div class="overlay-text"></div>
                         </div>
                     </div>
                 </a>
-                <h3>Portfolio V1</h3>
+                <h3>Android</h3>
                 <p>My Personal Website Built With React.js, And Support PWAs and Some of SEO Techniques For Google Search Console and SPA with Typescript, JSX, And SASS To Write Clear CSS...</p>
                 <p>GitHub: 2020</p>
             </div>
-            <div class="project-card"  data-category="websites">
+            <div class="project-card"  data-category="CrossPlatorm">
                 <a href="https://github.com/username/portfolio_v1">
                     <div class="project-image">
-                        <img src="../assets/img/contact-visual.png" alt="Portfolio V1">
+                        <img src="androidProject/cover.jpg" alt="Android">
                         <div class="overlay">
                         </div>
                     </div>
@@ -219,50 +216,10 @@
                 <p>GitHub: 2020</p>
             </div>
            
-            <div class="project-card" data-category="all">
+            <div class="project-card" data-category="CrossPlatorm">
                 <a href="https://github.com/username/portfolio_v1">
                     <div class="project-image">
-                        <img src="../assets/img/contact-visual.png" alt="Portfolio V1">
-                        <div class="overlay">
-                        </div>
-                    </div>
-                </a>
-                <h3>Portfolio V1</h3>
-                <p>My Personal Website Built With React.js, And Support PWAs and Some of SEO Techniques For Google Search Console and SPA with Typescript, JSX, And SASS To Write Clear CSS...</p>
-                <p>GitHub: 2020</p>
-            </div>
-        </div>
-        <div class="projects-container">
-            <div class="project-card" data-category="android">
-                <a href="https://github.com/username/portfolio_v1">
-                    <div class="project-image">
-                        <img src="../assets/img/contact-visual.png" alt="Portfolio V1">
-                        <div class="overlay">
-                            <div class="overlay-text"></div>
-                        </div>
-                    </div>
-                </a>
-                <h3>Portfolio V1</h3>
-                <p>My Personal Website Built With React.js, And Support PWAs and Some of SEO Techniques For Google Search Console and SPA with Typescript, JSX, And SASS To Write Clear CSS...</p>
-                <p>GitHub: 2020</p>
-            </div>
-            <div class="project-card" data-category="android">
-                <a href="https://github.com/username/portfolio_v1">
-                    <div class="project-image">
-                        <img src="../assets/img/contact-visual.png" alt="Portfolio V1">
-                        <div class="overlay">
-                        </div>
-                    </div>
-                </a>
-                <h3>Portfolio V1</h3>
-                <p>My Personal Website Built With React.js, And Support PWAs and Some of SEO Techniques For Google Search Console and SPA with Typescript, JSX, And SASS To Write Clear CSS...</p>
-                <p>GitHub: 2020</p>
-            </div>
-           
-            <div class="project-card" data-category="android">
-                <a href="https://github.com/username/portfolio_v1">
-                    <div class="project-image">
-                        <img src="../assets/img/contact-visual.png" alt="Portfolio V1">
+                        <img src="androidProject/cover.jpg" alt="Android">
                         <div class="overlay">
                         </div>
                     </div>
@@ -275,7 +232,7 @@
     </div>
 
     <script>
-       document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('.nav-link');
     const tabLinks = document.querySelectorAll('.tab-link');
     const projectCards = document.querySelectorAll('.project-card');
