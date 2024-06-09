@@ -70,7 +70,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            align-items: center;
+            /*align-items: center;*/
             padding: 20px;
             background-color: #222;
             border-radius: 15px;
@@ -138,6 +138,11 @@
                 margin-bottom: 20px;
             }
         }
+        
+        .experience{
+            padding: 1%;
+        }
+      
     </style>
 </head>
 <body>
@@ -147,73 +152,47 @@
         </div>
         <nav class="right-section">
             <a href="#" class="nav-link">Home</a>
-            <a href="Project.html" class="nav-link">Projects</a>
-            <a href="#" class="nav-link active">Skills</a>
+            <a href="../Project.html" class="nav-link " >Projects</a>
+            <a href="#" class="nav-link ">Skills</a>
             <a href="#" class="nav-link">Archive</a>
             <a href="#" class="nav-link">Articles</a>
         </nav>
     </header>
 
-    <div class="hero-section">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Discover my projects and skills</p>
-    </div>
+   
 
     <div class="projects-section">
-        <h2>Projects</h2>
+        <h2 style="padding: 2%;">Projects</h2>
         <div class="project-container">
             <div class="project-details">
                 <h3>Gitly</h3>
                 <p>This Project Built to Learn SwiftUI on iOS, MacOS Apps and the usage in this project for Apollo Client and GraphQL available only in iOS Apps. This project has a Download Schema, Generate and build Dynamic GraphQL Queries.</p>
                 <div class="tags">
-                    <span>iOS App</span>
-                    <span>Swift 5</span>
-                    <span>SwiftUI</span>
-                    <span>User Defaults</span>
-                    <span>GraphQL</span>
-                    <span>Apollo Client</span>
-                    <span>Dynamic Queries</span>
-                    <span>Pagination</span>
+                    <span>Flutter</span>
+                    <span>Dart</span>
+                    <span>Complex UIs</span>
+                    <span>BloC</span>
+                    <span>State Management</span>
+                    <span>Provider</span>
+                    
                 </div>
-                <a href="https://github.com/username/gitly" class="project-link">Project Link</a>
+                <a href="https://github.com/cerbyMP/NewsSystem" target="_blank" class="project-link">Project Link</a>
             </div>
             <div class="project-image">
                 <img src="cover.jpg" alt="Gitly">
-                
             </div>
-            
-            
         </div>
-
     </div>
-    <div class="projects-section">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-details">
-                <h3>Gitly</h3>
-                <p>This Project Built to Learn SwiftUI on iOS, MacOS Apps and the usage in this project for Apollo Client and GraphQL available only in iOS Apps. This project has a Download Schema, Generate and build Dynamic GraphQL Queries.</p>
-                <div class="tags">
-                    <span>iOS App</span>
-                    <span>Swift 5</span>
-                    <span>SwiftUI</span>
-                    <span>User Defaults</span>
-                    <span>GraphQL</span>
-                    <span>Apollo Client</span>
-                    <span>Dynamic Queries</span>
-                    <span>Pagination</span>
-                </div>
-                <a href="https://github.com/username/gitly" class="project-link">Project Link</a>
-            </div>
-            <div class="project-image">
-                <img src="cover.jpg" alt="Gitly">
-                
-            </div>
-            
-            
-        </div>
-
-    </div>
-
+  
+    <section class="experience">
+        <h2 style="padding: 2%;">Project Images</h2>
+        <img style="padding: 1%;" src="Onboarding.png" width="337" height="713" alt="Global" class="spaceel">
+        <img style="padding: 1%;" src="Home.png" width="337" height="713" alt="Global" class="spaceel">
+        <img style="padding: 1%;" src="More News.png" width="337" height="713" alt="Global" class="spaceel">
+        <img style="padding: 1%;" src="Category.png" width="337" height="713" alt="Global" class="spaceel">
+        <img style="padding: 1%;" src="Breaking News.png" width="337" height="713" alt="Global" class="spaceel">
+        <img style="padding: 1%;" src="Trending News.png" width="337" height="713" alt="Global" class="spaceel">
+      </section>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const links = document.querySelectorAll('.nav-link');
